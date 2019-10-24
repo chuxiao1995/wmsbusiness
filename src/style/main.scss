@@ -1,0 +1,461 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.green{
+    color: #388E8E;
+}
+.b{
+    font-weight: bold;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width:9px;
+    height:9px;
+    border: 0;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#20B2AA;
+    background-clip:padding-box;
+    min-height:28px;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius:2em;
+}
+::-webkit-scrollbar-track-piece{
+    display: none;
+}
+
+html,body{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body .el-table th.gutter{
+    display: table-cell!important;
+}
+body{
+    line-height:1.4;
+    color:#333;
+    font-family:arial;
+    font-size: 12px;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0!important;
+    background: rgb(238, 244, 244);
+}
+input,textarea,select{
+    font-size:12px;
+    font-size:100%;
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+}
+ul,ol{
+    padding-left:0;
+    list-style-type:none;
+}
+/*image with no-border*/
+a img{border:0;}
+img{border:0;}
+.container{
+    overflow: hidden;
+    .l{float:left;}.r{float:right;}.cl{clear:both;}
+    .n{font-weight:normal; font-style:normal;}.b{font-weight:bold;}.i{font-style:italic;}
+    .fa{font-family:Arial;}.fg{font-family:Georgia;}.ft{font-family:Tahoma;}.fl{font-family:Lucida Console;}.fs{font-family:'����';}.fw{font-family:'΢���ź�';}
+    .tc{text-align:center;}.tr{text-align:right;}.tl{text-align:left;}
+    .tdl{text-decoration:underline;}.tdn,.tdn:hover,a.tdl:hover{text-decoration:none;}
+    .g0{color:#000000;}.g3{color:#333333;}.g6{color:#666666;}.g9{color:#999999;}.red{color:red;}.wh{color:white;}
+    .f0{font-size:0;}.f10{font-size:10px;}.f12{font-size:12px;}.f13{font-size:13px;}.f14{font-size:14px;}.f16{font-size: 16px;}.f18{font-size: 18px;}.f16{font-size:16px;}.f20{font-size:20px;}.f24{font-size:24px;}
+    .vm{vertical-align:middle;}.vtb{vertical-align:text-bottom;}.vt{vertical-align:top;}.vn{vertical-align:-2px;}.vimg{margin-bottom:-3px;}
+    .m0{margin:0!important;}.ml1{margin-left:1px;}.ml2{margin-left:2px;}.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml20{margin-left:20px;}.mr1{margin-right:1;}.mr2{margin-right:2px;}.mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr20{margin-right:20px;}.mt1{margin-top:1;}.mt2{margin-top:2px;}.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt20{margin-top:20px;}.mb1{margin-bottom:1px;}.mb2{margin-bottom:2px;}.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb20{margin-bottom:20px;}.ml-1{margin-left:-1px;}.mt-1{margin-top:-1px;}.mt20{margin-top: 20px}.ml15{margin-left: 15px;}
+    .p0{padding: 0!important;}.p1{padding:1px;}.pl1{padding-left:1px;}.pt1{padding-top:1px;}.pr1{padding-right:1px;}.pb1{padding-bottom:1px;}.p2{padding:2px;}.pl2{padding-left:2px;}.pt2{padding-top:2px;}.pr2{padding-right:2px;}.pb2{padding-bottom:2px;}.pl5{padding-left:5px;}.p5{padding:5px;}.pt5{padding-top:5px;}.pr5{padding-right:5px;}.pb5{padding-bottom:5px;}.p10{padding:10px;}.pl10{padding-left:10px;}.pt10{padding-top:10px;}.pr10{padding-right:10px;}.pb10{padding-bottom:10px;}.p15{padding: 15px;}.pl15{padding-left: 15px;}.pt15{padding-top: 15px;}.pr15{padding-right: 15px;}.pb15{padding-bottom: 15px;}.p20{padding:20px;}.pl20{padding-left:20px;}.pt20{padding-top:20px;}.pr20{padding-right:20px;}.pb20{padding-bottom:20px;}
+    .rel{position:relative;}.abs{position:absolute;}
+    .dn{display:none;}.db{display:block;}.dib{-moz-inline-stack:inline-block; display:inline-block;}.di{display:inline;}
+    .ovh{overflow:hidden;}.ovs{overflow:scroll;}.vh{visibility:hidden;}.vv{visibility:visible;}
+    .lh14{line-height:14px;}.lh16{line-height:16px;}.lh18{line-height:18px;}.lh20{line-height:20px;}.lh22{line-height:22px;}.lh24{line-height:24px;}.lh32{line-height: 32px;}
+    .fix{*zoom:1;}.fix:after,.fix:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}.z{_zoom:1;}
+    .bxs{box-shadow: 0 0 15px #7AC5CD }
+    .bor_ff{border:#fff 1px solid;border-radius: 5px;&.notftr{border-top-left-radius: 0;border-top-right-radius: 0;}}
+    .bk_ff{background-color: #fff;}
+    .flex{
+        display: flex;
+        &.end{
+            justify-content: flex-end;
+        }
+        &.start{
+            justify-content: flex-start;
+        }
+    }
+    /*重写element样式*/
+    i{
+        font-size: 16px;
+    }
+    .el-date-editor .el-range-separator{
+        line-height: 26px;
+    }
+    .el-table{
+        font-size: 12px;
+    }
+    // .el-table__row.hover-row{
+    //     font-size: 13px;
+    // }
+    .el-form-item__label{
+        line-height: 32px;
+    }
+    .el-form-item__content{
+        line-height: 32px;
+    }
+    .el-input__inner{
+        height: 32px;
+        padding: 6px 8px;
+    }
+    .el-form-item__label{
+        color: #666;
+    }
+    
+    .el-table td, .el-table th.is-leaf{
+        border-bottom: 1px solid #eee;
+    }
+    .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed{
+        border-right: 1px solid #ddd;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+        border-color: #20B2AA;
+        background-color: #20B2AA;
+    }
+    .el-pagination{
+        color: #666;
+    }
+    .btn-prev{
+        color: #666;
+    }
+    .btn-next{
+        color: #666;
+    }
+    .el-table__body tr.current-row>td{
+        background-color: rgba(#7AC5CD, .2) ;
+    }
+    .el-dialog__header {
+        text-align: center;
+    }
+    .el-dialog__header {
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+    .el-dialog__body {
+        padding: 20 20 20 20;
+    }
+}
+
+
+@keyframes shrink {
+    0% {
+      width: 80px;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 80px;
+    }
+  }
+  .dropSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      height: 1px;
+      margin-right: 40px;
+      background-color: #19a5a1;
+      box-shadow: 0 0 5px #7ac5cd;
+      transition: 0.5s;
+    }
+    &:hover {
+      color: #19a5a1;
+      &.dropSection {
+        &::before {
+          width: 125px;
+          transition: 0.5s;
+        }
+      }
+    }
+    .hovering {
+      color: #19a5a1;
+      transform: translateX(-40px);
+      margin-left: 40px;
+    }
+    i {
+      color: #999;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    span {
+      transform: translateX(-30px);
+      font-size: 14px;
+      transition: 0.3s;
+    }
+  }
+  .container {
+    overflow-x: hidden;
+    .b {
+      border: #999 1px solid;
+      border-radius: 5px;
+    }
+    .header {
+      padding-left: 25px;
+      padding-top: 15px;
+      .h_img {
+        // 标题图标的颜色和大小
+        display: inline-block;
+        height: 20px;
+        width: 3px;
+        border: 1px #19a5a1 solid;
+        border-radius: 2px;
+        background-color: #19a5a1;
+        vertical-align: middle;
+      }
+      .h_title {
+        // 标题文字的大小和颜色
+        display: inline-block;
+        color: #19a5a1;
+        font-weight: bold;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-left: 13.8888px;
+      }
+    }
+    .divider {
+      //分割线的颜色 外边距 高度
+      margin: 0 0;
+      height: 2px;
+      background: #19a5a1;
+      &.mb0 {
+        margin-bottom: 0;
+      }
+    }
+    .top {
+      margin: 15px 25px 0 25px;
+      .el-form--inline {
+        //表单配置
+        .el-form-item {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 12px;
+          .el-form-item__label {
+            //label占比
+            width: 20%;
+          }
+          .el-form-item__content {
+            //表单占比
+            width: 86%;
+            .el-select {
+              width: 100%;
+            }
+            .el-date-editor {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      .view {
+        margin: 20px 20px 20px 25px;
+      }
+      .tabCont {
+        display: flex;
+        padding-bottom: 10px;
+        .tab_item {
+          font-size: 14px;
+          width: 200px;
+          height: 50px;
+          color: #999;
+          text-align: center;
+          line-height: 50px;
+          border-bottom: #999 3px solid;
+          &.active {
+            color: #19a5a1;
+            border-bottom: #19a5a1 3px solid;
+            font-weight: bold;
+          }
+        }
+      }
+      .buttonGroup {
+        padding: 5px 10px 5px 10px;
+        background: #d7f2ef;
+        &.nopt {
+          padding-top: 5;
+        }
+        .el-button {
+          font-size: 13px;
+        }
+        .nobr {
+          border-radius: 0;
+        }
+        .h_img {
+          // 标题图标的颜色和大小
+          display: inline-block;
+          height: 20px;
+          width: 3px;
+          border: 1px #19a5a1 solid;
+          border-radius: 2px;
+          background-color: #19a5a1;
+          vertical-align: middle;
+        }
+        .h_title {
+          // 标题文字的大小和颜色
+          display: inline-block;
+          color: #19a5a1;
+          font-weight: bold;
+          font-size: 16px;
+          vertical-align: middle;
+          padding-left: 13.8888px;
+        }
+      }
+      .excel {
+        padding: 2px 10px 2px 10px;
+        &.nopt {
+          padding-top: 2;
+        }
+        .el-button {
+          font-size: 13px;
+        }
+        .nobr {
+          border-radius: 0;
+        }
+      }
+      //表格配置
+      .tableCont {
+        &.out {
+          margin: 10px 20px 20px 25px;
+        }
+        th,
+        td {
+          text-align: center;
+        }
+        .el-table td {
+          padding: 3px;
+        }
+        .el-table th {
+          padding: 4px;
+        }
+        .tableExpandCont {
+          display: flex;
+          width: 60%;
+          flex-wrap: wrap;
+          padding-left: 11.5%;
+          .tableExpand_item {
+            display: flex;
+            width: 20%;
+            font-size: 14px;
+            height: 30px;
+            text-align: center;
+            color: #666;
+            label {
+              width: 120px;
+              text-align: right;
+              padding-right: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+        .selectRow {
+          background-color: #7ac5cd;
+        }
+        .el-radio__label {
+          padding-left: 0;
+        }
+      }
+    }
+    .tableHeaderStyle {
+      //表头背景 字体颜色
+      background: rgb(215, 242, 239) !important;
+      color: #19a5a1;
+      font-size: 13px;
+    }
+    .tableRowStyle {
+      //表格行字体大小  颜色
+      font-size: 12px !important;
+      color: #999 !important;
+    }
+  }
+  .el-button {
+    &.start {
+      width: 80px;
+      background-color: rgb(19, 194, 194);
+      color: #fff;
+      font-size: 12px;
+      height: 28px;
+      padding: 2px 4px;
+      border: rgb(19, 194, 194) 1px solid;
+    }
+    &.pause {
+      background-color: rgb(32, 178, 170);
+      color: #fff;
+      font-size: 12px;
+      width: 80px;
+      height: 28px;
+      padding: 2px 4px;
+    }
+    &.optBtn-suc {
+      background: #fff;
+      border: #19a5a1 1px solid;
+      color: #19a5a1;
+      font-size: 12px;
+    }
+    &.optBtn-edit {
+      background: #fff;
+      border: #6495ed 1px solid;
+      color: #6495ed;
+      font-size: 12px;
+    }
+    &.optBtn-info {
+      background: #6495ed;
+      border: #6495ed 1px solid;
+      color: #fff;
+      font-size: 12px;
+    }
+    &.mainButton {
+      //主要button的颜色  高度什么的
+      background: #19a5a1;
+      border: #19a5a1 1px solid;
+      color: #fff;
+      width: 100px;
+      height: 28px;
+      padding: 2px 4px;
+    }
+    &.defaultButton {
+      background: #fff;
+      border: #19a5a1 1px solid;
+      color: #19a5a1;
+      width: 100px;
+      height: 28px;
+      padding: 2px 4px;
+    }
+  }
